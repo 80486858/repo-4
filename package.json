@@ -1,50 +1,62 @@
 {
-  "name": "root",
-  "author": "Justin Wallace <jpwallace22@gmail.com>",
-  "version": "1.0.0",
+  "name": "use-react-workers",
   "description": "React Hooks for Web Workers & Web Worker utilities",
-  "packageManager": "yarn@4.0.2",
-  "devDependencies": {
-    "@changesets/cli": "^2.13.1",
-    "@commitlint/config-conventional": "^18.4.3",
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
-    "commitlint": "^18.4.3",
-    "concurrently": "^8.2.2",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-react": "^7.33.2",
-    "husky": "^8.0.0",
-    "lint-staged": "^15.2.0",
-    "prettier": "^3.2.1",
-    "rimraf": "^5.0.5",
-    "typescript": "^5.3.3"
+  "author": "Justin Wallace <jpwallace22@gmail.com>",
+  "version": "0.3.2",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.js"
   },
   "scripts": {
-    "hooks": "yarn workspace use-react-workers",
-    "docs": "yarn workspace docs",
-    "preinstall": "npx only-allow yarn",
-    "dev": "concurrently \"yarn hooks dev\" \"yarn docs dev\"",
-    "build": "yarn hooks build && yarn docs build",
-    "test:typecheck": "tsc --noEmit",
-    "lint": "eslint \"{use-react-workers, docs}/**/*.{js,jsx,ts,tsx,mdx}\"",
-    "lint:fix": "eslint \"{use-react-workers, docs}/**/*.{js,jsx,ts,tsx,mdx}\" --fix",
-    "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
-    "prettier:fix": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
-    "format": "yarn lint:fix && yarn prettier:fix",
-    "release:dry": "yarn hooks release:dry",
-    "prepare": "husky install"
+    "prebuild": "yarn test:types",
+    "build": "vite build",
+    "build:typecheck": "attw $(npm pack)",
+    "build:readme": "cp ../README.md README.md",
+    "dev": "vite build --watch",
+    "test:types": "tsc --noEmit",
+    "link": "eslint src/ --ext .ts",
+    "release:dry": "source ../.env && npx semantic-release --dry-run --branches $(git branch --show-current)"
   },
-  "private": true,
-  "workspaces": [
-    "use-react-workers",
-    "docs"
-  ],
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,mdx,md}": [
-      "yarn format"
-    ]
+  "dependencies": {
+    "dequal": "^2.0.3"
   },
-  "license": "MIT"
+  "peerDependencies": {
+    "react": "16 - 18"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.6",
+    "@semantic-release/npm": "^11.0.2",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "@testing-library/react-hooks": "^3.4.2",
+    "@types/react": "^16.9.34",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@vitejs/plugin-react": "^4.2.0",
+    "react": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "semantic-release": "^22.0.12",
+    "vite": "^5.0.4",
+    "vite-plugin-dts": "^3.6.4"
+  },
+  "license": "MIT",
+  "repository": "git@github.com:jpwallace22/use-react-workers.git",
+  "keywords": [
+    "use",
+    "webWorker",
+    "react",
+    "hooks",
+    "worker",
+    "web worker",
+    "blocking ui",
+    "javascript",
+    "background",
+    "typescript"
+  ]
 }
