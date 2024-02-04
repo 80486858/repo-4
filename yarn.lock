@@ -6050,13 +6050,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dequal@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "dequal@npm:1.0.1"
-  checksum: 3d2727637546257edbb1e98c49267726b37499213533eefdd6d23bf1596cf5bb9a716947aa6ed7bfe3ef2cf5c0958a0422da7b554553b82ea19eaa2d3e92848f
-  languageName: node
-  linkType: hard
-
 "dequal@npm:^2.0.0, dequal@npm:^2.0.3":
   version: 2.0.3
   resolution: "dequal@npm:2.0.3"
@@ -14704,7 +14697,7 @@ __metadata:
     "@types/react": "npm:^16.9.34"
     "@typescript-eslint/eslint-plugin": "npm:^6.18.1"
     "@vitejs/plugin-react": "npm:^4.2.0"
-    dequal: "npm:^1.0.0"
+    dequal: "npm:^2.0.3"
     react: "npm:^16.13.1"
     react-test-renderer: "npm:^16.13.1"
     semantic-release: "npm:^22.0.12"

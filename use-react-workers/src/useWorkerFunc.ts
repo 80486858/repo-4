@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import createWorkerBlobUrl from './utils/createWorkerBlobUrl.ts';
-import { useDeepCallback } from './utils/useDeepCallback.ts';
 import { Options, TRANSFERABLE_TYPE, WorkerStatus } from './types.ts';
 
 // TODO
@@ -77,7 +76,7 @@ export const useWorkerFunc: UseWorkerFunc = <T extends (...funcArgs: any[]) => a
     [autoTerminate, killWorker, setWorkerStatus]
   );
 
-  const generateWorker = useDeepCallback(() => {
+  const generateWorker = useCallback(() => {
     const workerUrl = createWorkerBlobUrl(func, remoteDependencies, transferable);
 
     const webWorker: Worker & { _url?: string } = new Worker(workerUrl);

@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPersistentBlobUrl } from './utils/createPersistentBlobUrl.ts';
-import { useDeepCallback } from './utils/useDeepCallback.ts';
 import { Options, TRANSFERABLE_TYPE, WorkerStatus } from './types.ts';
 
 const defaultOptions = {
@@ -46,7 +45,7 @@ export const useWorker: UseWorker = <T extends (...funcArgs: any[]) => any>(
     }
   }, []);
 
-  const generateWorker = useDeepCallback(() => {
+  const generateWorker = useCallback(() => {
     const workerUrl = createPersistentBlobUrl(func, remoteDependencies);
 
     const webWorker: Worker & { _url?: string } = new Worker(workerUrl);

@@ -36,9 +36,6 @@ typings/
 .env
 
 # Production
-dist/
-build/
-.astro/
 
 # editors
 .vscode
