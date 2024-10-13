@@ -11,7 +11,7 @@ require (
 	github.com/jackc/pgx/v5 v5.5.5
 	github.com/lib/pq v1.10.9
 	github.com/nats-io/nats.go v1.33.1
-	github.com/rabbitmq/amqp091-go v1.9.0
+	github.com/rabbitmq/amqp091-go v1.10.0
 	github.com/redis/go-redis/v9 v9.5.1
 	github.com/stretchr/testify v1.9.0
 	github.com/vitorsalgado/mocha/v2 v2.0.2
