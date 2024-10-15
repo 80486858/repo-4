@@ -504,7 +504,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SHFMT_OPTS: -l -i 4 -w
       name: Run the sh-checker
-      uses: luizm/action-sh-checker@v0.3.0
+      uses: luizm/action-sh-checker@v0.9.0
       with:
         sh_checker_comment: true
         sh_checker_exclude: 'src/
