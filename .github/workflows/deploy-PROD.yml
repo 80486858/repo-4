@@ -270,7 +270,7 @@ jobs:
     - continue-on-error: true
       id: deployment
       name: Start deployment
-      uses: bobheadxi/deployments@v0.4.3
+      uses: bobheadxi/deployments@v1.5.0
       with:
         env: Production
         step: start
@@ -319,7 +319,7 @@ jobs:
     - continue-on-error: true
       if: always()
       name: Update deployment status
-      uses: bobheadxi/deployments@v0.4.3
+      uses: bobheadxi/deployments@v1.5.0
       with:
         deployment_id: ${{ steps.deployment.outputs.deployment_id }}
         env_url: https://github.com/github/super-linter
