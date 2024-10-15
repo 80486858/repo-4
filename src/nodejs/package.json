@@ -29,7 +29,7 @@
     "@types/jest": "^29.5.13",
     "@types/node": "22.5.5",
     "@types/uuid": "^10.0.0",
-    "aws-cdk": "2.158.0",
+    "aws-cdk": "2.162.1",
     "aws-cdk-lib": "^2.160.0",
     "axios": "^1.7.7",
     "constructs": "^10.3.0",
