@@ -35,7 +35,7 @@ dotenvy = "0.15.7"
 email_address = "0.2.5"
 sha1 = "0.10.6"
 assert-json-diff = "2.0.2"
-opentelemetry-otlp = { version = "0.16.0" }
+opentelemetry-otlp = { version = "0.26.0" }
 opentelemetry_sdk = { version = "0.23.0", features = ["rt-tokio"] }
 tower-http = { version = "0.5.2", features = ["cors", "trace"] }
 axum-extra = { version = "0.9.3", features = ["typed-header"] }
