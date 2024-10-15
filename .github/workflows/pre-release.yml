@@ -270,7 +270,7 @@ jobs:
     - continue-on-error: true
       id: get-latest-tag
       name: Get latest version tag
-      uses: actions-ecosystem/action-get-latest-tag@v1.4.1
+      uses: actions-ecosystem/action-get-latest-tag@v1.6.0
     - continue-on-error: true
       id: changelog
       name: Generate changelog
