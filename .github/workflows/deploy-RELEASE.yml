@@ -251,7 +251,7 @@ jobs:
     - continue-on-error: true
       id: update-issue
       name: Update GitHub Issue
-      uses: actions/github-script@v3.1.0
+      uses: actions/github-script@v7
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: "github.issues.createComment({\n  owner: context.repo.owner,\n  repo:\
@@ -610,7 +610,7 @@ jobs:
     - continue-on-error: true
       id: update-issue
       name: Update GitHub Issue
-      uses: actions/github-script@v3.1.0
+      uses: actions/github-script@v7
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: "github.issues.createComment({\n  owner: context.repo.owner,\n  repo:\
@@ -620,7 +620,7 @@ jobs:
     - continue-on-error: true
       id: close-issue
       name: Close GitHub Issue
-      uses: actions/github-script@v3.1.0
+      uses: actions/github-script@v7
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: "github.issues.update({\n  owner: context.repo.owner,\n  repo: context.repo.repo,\n\
