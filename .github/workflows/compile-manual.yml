@@ -252,7 +252,7 @@ jobs:
       run: docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex:2.6
         MANUAL.md -s -t man > debian/cis-hardening.8
     - continue-on-error: true
-      uses: EndBug/add-and-commit@v7
+      uses: EndBug/add-and-commit@v9
       with:
         add: debian/cis-hardening.8
         message: Regenerate man pages (Github action)
