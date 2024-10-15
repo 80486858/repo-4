@@ -247,7 +247,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v4
     - continue-on-error: true
-      uses: haskell-actions/run-fourmolu@v8
+      uses: haskell-actions/run-fourmolu@v10
       with:
         pattern: 'Cabal/**/*.hs
 
