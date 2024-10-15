@@ -260,15 +260,15 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: cabal-Windows-x86_64
     - continue-on-error: true
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: cabal-Linux-x86_64
     - continue-on-error: true
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: cabal-macOS-x86_64
     - continue-on-error: true
