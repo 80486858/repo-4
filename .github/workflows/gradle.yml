@@ -256,7 +256,7 @@ jobs:
         java-version: '21'
     - continue-on-error: true
       name: Setup Gradle
-      uses: gradle/actions/setup-gradle@16bf8bc8fe830fa669c3c9f914d3eb147c629707
+      uses: gradle/actions/setup-gradle@d156388eb19639ec20ade50009f3d199ce1e2808
       with:
         validate-wrappers: false
     - continue-on-error: true
