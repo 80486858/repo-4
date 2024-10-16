@@ -262,7 +262,7 @@ jobs:
     - continue-on-error: true
       id: metadata
       name: Docker metadata
-      uses: docker/metadata-action@v4
+      uses: docker/metadata-action@v5
       with:
         images: 'nextcloud/${{ matrix.container.name }}
 
