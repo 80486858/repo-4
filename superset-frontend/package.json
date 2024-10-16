@@ -68,7 +68,7 @@
     "@superset-ui/chart-controls": "^0.17.2",
     "@superset-ui/core": "^0.17.1",
     "@superset-ui/legacy-plugin-chart-calendar": "^0.17.2",
-    "@superset-ui/legacy-plugin-chart-chord": "^0.17.2",
+    "@superset-ui/legacy-plugin-chart-chord": "^0.20.2",
     "@superset-ui/legacy-plugin-chart-country-map": "^0.17.2",
     "@superset-ui/legacy-plugin-chart-event-flow": "^0.17.2",
     "@superset-ui/legacy-plugin-chart-force-directed": "^0.17.2",
