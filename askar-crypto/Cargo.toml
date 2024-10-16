@@ -105,7 +105,7 @@ secure-env = { package = "animo-secure-env", version = "0.4", optional = true }
 serde = { version = "1.0", default-features = false, features = ["derive"] }
 serde-json-core = { version = "0.5", default-features = false }
 sha2 = { version = "0.10", default-features = false }
-subtle = "2.4"
+subtle = "2.6"
 uuid = { version = "1.8", default-features = false, optional = true, features = ["v4"] }
 x25519-dalek = { version = "2", default-features = false, features = [
     "static_secrets",
