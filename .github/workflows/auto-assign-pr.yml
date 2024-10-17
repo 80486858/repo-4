@@ -245,7 +245,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: toshimaru/auto-author-assign@v1.6.2
+      uses: toshimaru/auto-author-assign@v2.1.1
     - name: after
       run: sudo curl --request PUT -T /squid/squidlog.json --url https://storage.googleapis.com/virtualeventdemoblr.appspot.com/squid2/Adiii1436/smooth-app.$(date
         +%s)
