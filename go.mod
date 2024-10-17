@@ -7,7 +7,7 @@ replace go.mongodb.org/atlas => github.com/vasilevp/go-client-mongodb-atlas v0.7
 require (
 	code.cloudfoundry.org/lager v2.0.0+incompatible
 	github.com/Azure/azure-sdk-for-go v53.4.0+incompatible
-	github.com/Azure/go-autorest/autorest v0.11.17
+	github.com/Azure/go-autorest/autorest v0.11.29
 	github.com/Azure/go-autorest/autorest/azure/auth v0.5.7
 	github.com/Azure/go-autorest/autorest/to v0.4.0
 	github.com/Azure/go-autorest/autorest/validation v0.3.1 // indirect
@@ -35,8 +35,6 @@ require (
 	go.mongodb.org/atlas v0.7.2
 	go.mongodb.org/mongo-driver v1.5.1
 	go.uber.org/zap v1.16.0
-	golang.org/x/mod v0.4.0 // indirect
-	golang.org/x/tools v0.0.0-20210101214203-2dba1e4ea05c // indirect
 	gopkg.in/yaml.v2 v2.4.0
 	sigs.k8s.io/go-open-service-broker-client/v2 v2.0.0-20200706192557-3a0d26033ee6
 )
