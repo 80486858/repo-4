@@ -247,7 +247,7 @@ jobs:
     - continue-on-error: true
       id: release
       name: Release-Please
-      uses: GoogleCloudPlatform/release-please-action@v3
+      uses: GoogleCloudPlatform/release-please-action@v4
       with:
         release-type: simple
         token: ${{ secrets.GITHUB_TOKEN }}
