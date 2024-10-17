@@ -18,7 +18,7 @@ require (
 	github.com/labstack/echo-contrib v0.16.0
 	github.com/labstack/echo/v4 v4.11.4
 	github.com/labstack/gommon v0.4.2
-	github.com/morkid/paginate v1.1.7
+	github.com/morkid/paginate v1.1.8
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pkg/errors v0.9.1
 	github.com/pressly/goose/v3 v3.19.2
