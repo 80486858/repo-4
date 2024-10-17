@@ -255,7 +255,7 @@ jobs:
         ref: ${{ github.event.inputs.ref }}
     - continue-on-error: true
       name: Install Helm
-      uses: azure/setup-helm@v3
+      uses: azure/setup-helm@v4
       with:
         version: v3.7.0
     - continue-on-error: true
