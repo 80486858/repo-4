@@ -253,7 +253,7 @@ jobs:
         CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       name: crowdin action
-      uses: crowdin/github-action@v1.7.0
+      uses: crowdin/github-action@v2.2.0
       with:
         auto_approve_imported: true
         commit_message: 'chore: New Crowdin translations'
