@@ -277,7 +277,7 @@ jobs:
         && ./decrypt_secrets.sh
     - continue-on-error: true
       name: Get latest VERSION_CODE
-      uses: maierj/fastlane-action@v3.0.0
+      uses: maierj/fastlane-action@v3.1.0
       with:
         lane: getOldVersionCode
         subdirectory: packages/smooth_app/android

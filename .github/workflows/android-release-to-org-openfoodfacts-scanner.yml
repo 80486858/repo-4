@@ -303,7 +303,7 @@ jobs:
         VERSION_CODE: ${{ inputs.VERSION_CODE }}
         VERSION_NAME: ${{ inputs.VERSION_NAME }}
       name: Bump version
-      uses: maierj/fastlane-action@v3.0.0
+      uses: maierj/fastlane-action@v3.1.0
       with:
         lane: setVersion
         subdirectory: ./packages/smooth_app/android/
@@ -335,7 +335,7 @@ jobs:
         SIGN_STORE_PATH: ./../fastlane/envfiles/keystore.jks
       if: inputs.RELEASE_TYPE == 'PLAY' && inputs.BUILD_TYPE == 'appbundle'
       name: Release AAB
-      uses: maierj/fastlane-action@v3.0.0
+      uses: maierj/fastlane-action@v3.1.0
       with:
         lane: release
         subdirectory: ./packages/smooth_app/android/
