@@ -6,7 +6,7 @@ require (
 	github.com/FZambia/sentinel v1.1.1
 	github.com/caarlos0/env/v6 v6.10.1
 	github.com/docker/docker v20.10.22+incompatible
-	github.com/docker/go-connections v0.4.0
+	github.com/docker/go-connections v0.5.0
 	github.com/gocraft/work v0.5.1
 	github.com/gomodule/redigo v1.8.9
 	github.com/gorilla/mux v1.8.0
@@ -51,7 +51,7 @@ require (
 	github.com/robfig/cron v1.2.0 // indirect
 	github.com/stretchr/objx v0.5.0 // indirect
 	go.opencensus.io v0.22.4 // indirect
-	golang.org/x/sys v0.0.0-20220728004956-3c1f35247d10 // indirect
+	golang.org/x/sys v0.1.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
